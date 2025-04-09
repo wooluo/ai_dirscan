@@ -1,0 +1,792 @@
+{
+    "info": {
+        "args": "./dirsearch/dirsearch.py -u https://ctf.bugku.com/ -o scan_results/scan_20250409_152956.json --format=json -q --no-color -i 200 --exclude-status=404,403,500",
+        "time": "Wed Apr  9 15:30:54 2025"
+    },
+    "results": [
+        {
+            "content-length": 911,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/404.html"
+        },
+        {
+            "content-length": 11488,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/About"
+        },
+        {
+            "content-length": 11488,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/about"
+        },
+        {
+            "content-length": 11488,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/about.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/2/explore/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/api"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/2/issue/createmeta"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/apidocs"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/_swagger_/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/api-docs"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/__swagger__/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/config"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/batch"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/application.wadl"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/apidocs/swagger.json"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/cask/graphql"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/docs"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/index.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/package_search/v4/documentation"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/jsonws"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/login.json"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/docs/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/error_log"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger-ui.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/spec/swagger.json"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/snapshots"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/proxy"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/profile"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/jsonws/invoke"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger/static/index.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger.yaml"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger/swagger"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger/index.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger/ui/index"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger.yml"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/swagger.json"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v1/swagger.json"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v1/swagger.yaml"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v1"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/timelion/run"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v1/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v2/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v2/helpdesk/discover"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v3"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v4"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/whoami"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/version"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v2"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v2/swagger.yaml"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/vendor/phpunit/phpunit/phpunit"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/api/v2/swagger.json"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/attachment.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/base/static/c"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/base"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/base/"
+        },
+        {
+            "content-length": 49001,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/down"
+        },
+        {
+            "content-length": 49001,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/down/"
+        },
+        {
+            "content-length": 4286,
+            "content-type": "image/x-icon",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/favicon.ico"
+        },
+        {
+            "content-length": 137667,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/index"
+        },
+        {
+            "content-length": 137667,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/index.html"
+        },
+        {
+            "content-length": 13390,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/links"
+        },
+        {
+            "content-length": 13390,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/links.html"
+        },
+        {
+            "content-length": 6120,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/login"
+        },
+        {
+            "content-length": 6120,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/login.html"
+        },
+        {
+            "content-length": 6120,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/login.json"
+        },
+        {
+            "content-length": 6120,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/login/"
+        },
+        {
+            "content-length": 6120,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/login/index"
+        },
+        {
+            "content-length": 2287,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/logout"
+        },
+        {
+            "content-length": 2287,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/logout/"
+        },
+        {
+            "content-length": 2287,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/logout.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/login.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/login.jsp"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/login.rb"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/login.js"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/login.py"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/logon"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/signin"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/member/login"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/order"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/order.html"
+        },
+        {
+            "content-length": 4351,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/reset.html"
+        },
+        {
+            "content-length": 4351,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/reset"
+        },
+        {
+            "content-length": 86,
+            "content-type": "text/text",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/robots.txt"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/store.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/store"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/store/app/etc/local.xml"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/team/"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/test"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/test/"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/test.html"
+        },
+        {
+            "content-length": 2823589,
+            "content-type": "text/xml",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/sitemap.xml"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/test_"
+        },
+        {
+            "content-length": 43684,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/tools"
+        },
+        {
+            "content-length": 43684,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/tools/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/1"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/2"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/0"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/3"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/login.html"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/login.jsp"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/login.js"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/signup"
+        },
+        {
+            "content-length": 2221,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://ctf.bugku.com/user/login/"
+        }
+    ]
+}

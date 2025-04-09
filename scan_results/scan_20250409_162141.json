@@ -1,0 +1,99 @@
+{
+    "info": {
+        "args": "./dirsearch/dirsearch.py -u https://blog.byzhb.top/ -o scan_results/scan_20250409_162141.json --format=json -q --no-color -i 200 --exclude-status=404,403,500",
+        "time": "Wed Apr  9 16:22:10 2025"
+    },
+    "results": [
+        {
+            "content-length": 138,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/404.html"
+        },
+        {
+            "content-length": 387347,
+            "content-type": "image/x-icon",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/favicon.ico"
+        },
+        {
+            "content-length": 917,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/index.html"
+        },
+        {
+            "content-length": 19915,
+            "content-type": "text/plain",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/license.txt"
+        },
+        {
+            "content-length": 7409,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/readme.html"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-content/"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-cron.php"
+        },
+        {
+            "content-length": 69,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-content/plugins/akismet/akismet.php"
+        },
+        {
+            "content-length": 260,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-content/plugins/hello.php"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-includes/rss-functions.php"
+        },
+        {
+            "content-length": 0,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-config.php"
+        },
+        {
+            "content-length": 1275,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-admin/install.php"
+        },
+        {
+            "content-length": 9543,
+            "content-type": "text/html",
+            "redirect": "",
+            "status": 200,
+            "url": "https://blog.byzhb.top/wp-login.php"
+        }
+    ]
+}
