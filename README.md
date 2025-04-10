@@ -13,12 +13,21 @@ AI DirScan 是基于 **MCP协议** 的新一代智能安全扫描工具，创新
 
 🚀 **技术亮点**  
 - 采用 **FastMCP** 框架实现高并发处理
-- 支持 200/403/500 等状态码智能过滤
-- 全流程扫描日志追溯机制
+- 使用mcp协议中的**sse方案**，增加对扫描工具超时优化
+- 支持 200/403/500 等状态码智能筛选分析
+- 可配合Cline进行扫描全流程自动化，产出相应md格式漏洞报告
 
 🧑🏻‍💻 功能预览
 
-<img src="assets/image-20250409171420328.png" alt="image-20250409171420328" style="zoom: 33%;" />
+该MCP工具可自动获取对话中的URL地址，并进行目录扫描
+
+<img src="assets/image-20250410163252645.png" alt="image-20250410163252645" style="zoom:50%;" />
+
+自动分析非200页面网页内容，可用于发现服务器版本泄露，框架类型版本泄露，网站绝对路径泄露等漏洞，并在分析完所有扫描得到的路径之后，会产出md格式漏洞报告（依赖于cline）
+
+> 为节省LLM的api tokens，对非200状态码界面进行了数据筛选工作，以 状态码+返回包大小 作为判断标识，同样的组合仅保留分析一组
+
+<img src="assets/image-20250410162827424.png" alt="image-20250410162827424" style="zoom: 25%;" />
 
 🤩 目前项目还在逐步完善中，后续会增加更多的功能，如果有更好的建议欢迎指出
 
@@ -28,52 +37,73 @@ AI DirScan 是基于 **MCP协议** 的新一代智能安全扫描工具，创新
 - Python 3.10+
 - UV 虚拟环境工具
 - 支持的大模型API密钥
+- 新版Cline IDE插件
 
-### 安装步骤
+### 初始化环境
+
+**MacOS/Linux**：
+
 ```bash
 # 克隆仓库
 git clone https://github.com/Elitewa/ai_dirscan.git
 cd ai_dirscan
-
 # 创建虚拟环境
 uv venv .venv
-
 # 激活环境
-（macOS/Linux）
 source .venv/bin/activate
-（Windows）
-.venv\Scripts\activate.bat
-
 # 安装依赖
 uv pip install -e .
 cd dirsearch
 uv pip install -r requirements.txt
 uv pip install setuptools
-# 对接客户端
-    "scan_dir": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "your_path/ai_dirscan/",
-        "run",
-        "main.py"
-      ]
-    }
 ```
+
+**Windows：**
+
+```sh
+# 克隆仓库
+git clone https://github.com/Elitewa/ai_dirscan.git
+cd ai_dirscan
+# 创建虚拟环境
+uv venv .venv
+# 激活环境
+.venv\Scripts\activate.bat
+# 安装依赖
+uv pip install -e .
+cd dirsearch
+uv pip install -r requirements.txt
+uv pip install setuptools
+```
+
+### 对接Cline
+
+进入项目目录，允许以下命令，开启sse服务
+
+```sh
+uv run main.py
+```
+
+如图便是开启成功
+
+<img src="assets/image-20250410164616472.png" alt="image-20250410164616472" style="zoom:50%;" />
+
+Vscode下载最新版Cline插件,进入远程MCP服务添加页面，名称自定义，URL填写 `http://0.0.0.0:8000/sse`，并保存
+
+<img src="assets/image-20250410164822985.png" alt="image-20250410164822985" style="zoom:50%;" />
+
+在已导入的MCP服务中，将超时时长设置为10min（视扫描时长而定），如果保存后无法连接mcp服务器，建议点击 Configure MCP Servers 选项，然后对弹出的配置json 进行ctrl+s 保存
+
+<img src="assets/image-20250410165226107.png" alt="image-20250410165226107" style="zoom: 25%;" />
+
+建议在对话中开启MCP自动调用，这样更加方便
+
+<img src="assets/image-20250410165705433.png" alt="image-20250410165705433" style="zoom:50%;" />
 
 ### 提示词优化
 
+经测试，使用以下提示词效果更好
+
 ```
-你是一个帮公司扫描网站目录路径的专家，我们为你提供了一个叫做 scan_dir 的mcp服务，你可以调用这个服务，传入用户提供的url参数，然后scan_dir会返回形如以下格式的参数
-        {
-            "status": 200,
-            "data": {
-                "file_path": str(output_file),
-                "valid_paths": valid_paths,
-                "total_found": len(valid_paths)
-            },
-            "message": "扫描完成"
-        }
-其中"valid_paths"部分便是扫描得到的路径，你需要把这些路径可能产生的危害和利用方法以及修复方案还有该目录，以标准漏洞报表的表格的形式返回给用户，并且返回扫描结果保存的路径file_path
+请帮我使用已有的mcp工具扫描网站https://xxx.xxx.top/ ，非200响应页面都要调用get_content函数获取内容，判断是否存在版本目录泄露等漏洞，并输出得到的目录，状态码,危害，利用方法，修复方法，以表格的形式统一给我写在md文件中
 ```
 
