@@ -52,7 +52,7 @@ uv venv .venv
 # 激活环境
 source .venv/bin/activate
 # 安装依赖
-uv pip install -e .
+uv add "mcp[cli]"
 cd dirsearch
 uv pip install -r requirements.txt
 uv pip install setuptools
@@ -69,7 +69,7 @@ uv venv .venv
 # 激活环境
 .venv\Scripts\activate.bat
 # 安装依赖
-uv pip install -e .
+uv add "mcp[cli]"
 cd dirsearch
 uv pip install -r requirements.txt
 uv pip install setuptools
