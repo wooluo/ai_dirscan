@@ -7,11 +7,11 @@ from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
 # 初始化 MCP 服务
-mcp = FastMCP("ai_dirscan",port=8000)
+mcp = FastMCP("ai_dirscan",port=8001)
 
 # 配置存储路径
 SCAN_RESULT_DIR = Path("scan_results")
-SCAN_RESULT_DIR.mkdir(exist_ok=True)  # 自动创建存储目录[5](@ref)
+SCAN_RESULT_DIR.mkdir(exist_ok=True)
 
 @mcp.tool()
 def scan_dir(url: str) -> str:
@@ -132,7 +132,7 @@ def get_content(url: str) -> str:
         
         if response.status_code != 200:
             return response.text
-        return f"非404页面，当前状态码：{response.status_code}"
+        return f"200响应页面，无需进行深度分析"
         
     except requests.exceptions.RequestException as e:
         return f"请求异常：{str(e)}"
