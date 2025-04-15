@@ -7,7 +7,7 @@ from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
 # 初始化 MCP 服务
-mcp = FastMCP("ai_dirscan",port=8001)
+mcp = FastMCP("ai_dirscan",port=8000)
 
 # 配置存储路径
 SCAN_RESULT_DIR = Path("scan_results")
