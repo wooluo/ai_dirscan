@@ -51,11 +51,14 @@ cd ai_dirscan
 uv venv .venv
 # 激活环境
 source .venv/bin/activate
-# 安装依赖
+# 安装虚拟环境依赖
 uv add "mcp[cli]"
+uv add requests
+deactivate
+# 退出虚拟环境，在系统主环境执行以下命令
 cd dirsearch
-uv pip install -r requirements.txt
-uv pip install setuptools
+pip install -r requirements.txt
+pip install setuptools
 ```
 
 **Windows：**
@@ -70,9 +73,12 @@ uv venv .venv
 .venv\Scripts\activate.bat
 # 安装依赖
 uv add "mcp[cli]"
+uv add requests
+deactivate
+# 退出虚拟环境，在系统主环境执行以下命令
 cd dirsearch
-uv pip install -r requirements.txt
-uv pip install setuptools
+pip install -r requirements.txt
+pip install setuptools
 ```
 
 ### 对接Cline

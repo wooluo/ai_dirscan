@@ -34,7 +34,7 @@ def scan_dir(url: str) -> str:
     
     # 构建扫描命令
     base_cmd = [
-        "python3", "./dirsearch/dirsearch.py",
+        "python", "./dirsearch/dirsearch.py",
         "-u", url,
         "-o", str(output_file),
         "--format=json",
