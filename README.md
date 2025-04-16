@@ -3,6 +3,7 @@
 🔗 **项目地址**: [https://github.com/Elitewa/ai_dirscan](https://github.com/Elitewa/ai_dirscan)
 
 ## 📖 项目简介
+本项目可以说是MCP+AI和传统安全融合的一个示范，鉴于现在关于MCP for Security的知识还不够完善，也算是抛砖引玉了，如果有更好的建议欢迎指出🤩
 
 AI DirScan 是基于 **MCP协议** 的新一代智能安全扫描工具，创新性地将传统目录爆破工具 dirsearch 与大型语言模型（LLM）相结合，实现：
 
@@ -28,8 +29,6 @@ AI DirScan 是基于 **MCP协议** 的新一代智能安全扫描工具，创新
 > 为节省LLM的api tokens，对扫描结果进行了数据筛选工作，以 状态码+返回包大小 作为判断标识，同样的组合仅保留分析一组
 
 <img src="assets/image-20250410162827424.png" alt="image-20250410162827424" style="zoom: 25%;" />
-
-🤩 目前项目还在逐步完善中，后续会增加更多的功能，如果有更好的建议欢迎指出
 
 ## 🛠️ 快速开始
 
