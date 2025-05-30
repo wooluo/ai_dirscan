@@ -126,7 +126,7 @@ def get_content(url: str) -> str:
     try:
         response = requests.get(
             url,
-            headers={"User-Agent": "Mozilla/5.0"},
+            headers={"User-Agent": "Windows-Azure-Web/1.0 Microsoft-HTTPAPI/2.0"},
             timeout=5
         )
         
@@ -136,6 +136,49 @@ def get_content(url: str) -> str:
         
     except requests.exceptions.RequestException as e:
         return f"请求异常：{str(e)}"
+
+@mcp.tool()
+def detect_sql_injection(url: str) -> str:
+    """
+    检测URL是否存在SQL注入漏洞，如存在则自动调用SQLmap
+    
+    Args:
+        url (str): 要检测的URL
+        
+    Returns:
+        str: JSON格式的检测结果
+    """
+    try:
+        # 检测SQL注入漏洞的简单测试
+        test_url = f"{url}?id=1'"
+        response = requests.get(test_url, timeout=5)
+        
+        # 检查常见SQL错误特征
+        sql_errors = [
+            "SQL syntax", "MySQL", "ORA-", 
+            "syntax error", "unclosed", "quoted"
+        ]
+        
+        if any(error in response.text for error in sql_errors):
+            # 发现潜在SQL注入漏洞，自动调用SQLmap
+            sqlmap_result = run_sqlmap(url)
+            return json.dumps({
+                "status": 200,
+                "vulnerable": True,
+                "sqlmap_result": json.loads(sqlmap_result)
+            }, ensure_ascii=False)
+        
+        return json.dumps({
+            "status": 200,
+            "vulnerable": False,
+            "message": "未检测到明显的SQL注入漏洞"
+        }, ensure_ascii=False)
+        
+    except Exception as e:
+        return json.dumps({
+            "status": 500,
+            "error": str(e)
+        }, ensure_ascii=False)
 def error_response(exception, code, message, filepath):
     """构建错误响应模板"""
     return {
@@ -147,6 +190,51 @@ def error_response(exception, code, message, filepath):
         "message": message,
         "failed_path": str(filepath) if filepath else None
     }
+
+@mcp.tool()
+def run_sqlmap(target_url: str, options: str = None) -> str:
+    """
+    自动执行SQLmap扫描
+    
+    Args:
+        target_url (str): 目标URL
+        options (str): 可选参数，将直接传递给SQLmap
+        
+    注意：字典文件路径已更新为dirsearch/db/sql.txt
+        options (str): SQLmap命令行选项(可选)
+        
+    Returns:
+        str: JSON格式的扫描结果
+    """
+    try:
+        # 构建基本命令
+        base_cmd = ["python", "./sqlmap/sqlmap.py", "-u", target_url, "--batch", "--output-dir=scan_results"]
+        
+        # 添加可选参数
+        if options:
+            base_cmd.extend(options.split())
+        
+        # 执行扫描
+        result = subprocess.run(
+            base_cmd,
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        
+        # 返回结果
+        return json.dumps({
+            "status": 200,
+            "output": result.stdout,
+            "report_path": f"scan_results/sqlmap_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        }, ensure_ascii=False)
+        
+    except subprocess.CalledProcessError as e:
+        return json.dumps({
+            "status": 500,
+            "error": str(e),
+            "output": e.stdout
+        }, ensure_ascii=False)
 
 if __name__ == "__main__":
     mcp.run(transport='sse')

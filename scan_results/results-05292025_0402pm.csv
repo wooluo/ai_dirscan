@@ -1,0 +1,3 @@
+Target URL,Place,Parameter,Technique(s),Note(s)
+http://testphp.vulnweb.com/showimage.php?file=,GET,file,T,false positive or unexploitable
+http://testphp.vulnweb.com/artists.php?artist=1,GET,artist,BETU,

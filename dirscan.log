@@ -1,0 +1,62 @@
+2025-05-29 14:59:15,380 - ai_dirscan - INFO - Starting MCP service on port 8000
+2025-05-29 15:01:25,280 - ai_dirscan - INFO - Starting MCP service on port 8000
+2025-05-29 15:02:08,706 - ai_dirscan - INFO - Starting MCP service on port 8000
+2025-05-29 15:02:20,613 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-05-29 15:02:20,643 - mcp.server.lowlevel.server - INFO - Processing request of type PingRequest
+2025-05-29 15:02:20,645 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-05-29 15:02:34,857 - mcp.server.lowlevel.server - INFO - Processing request of type PingRequest
+2025-05-29 15:02:34,860 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-29 15:02:39,307 - mcp.server.lowlevel.server - INFO - Processing request of type PingRequest
+2025-05-29 15:02:39,309 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-29 15:02:39,309 - ai_dirscan - INFO - Starting scan for http://www.baidu.com
+2025-05-29 15:02:39,618 - ai_dirscan - ERROR - Scan process error: Traceback (most recent call last):
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 73, in <module>
+    main()
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 66, in main
+    from lib.controller.controller import Controller
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/controller/controller.py", line 27, in <module>
+    from lib.connection.requester import Requester
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/connection/requester.py", line 30, in <module>
+    from requests_ntlm import HttpNtlmAuth
+ModuleNotFoundError: No module named 'requests_ntlm'
+
+2025-05-29 15:02:39,618 - ai_dirscan - ERROR - Scan process failed: Traceback (most recent call last):
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 73, in <module>
+    main()
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 66, in main
+    from lib.controller.controller import Controller
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/controller/controller.py", line 27, in <module>
+    from lib.connection.requester import Requester
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/connection/requester.py", line 30, in <module>
+    from requests_ntlm import HttpNtlmAuth
+ModuleNotFoundError: No module named 'requests_ntlm'
+: Command '['python', './dirsearch/dirsearch.py', '-u', 'http://www.baidu.com', '-o', 'scan_results/scan_www.baidu.com_20250529_150239.json', '--format=json', '-q', '--no-color']' returned non-zero exit status 1.
+2025-05-29 15:03:23,857 - ai_dirscan - INFO - Starting MCP service on port 8000
+2025-05-29 15:05:02,407 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-29 15:05:02,407 - ai_dirscan - INFO - Starting scan for http://www.baidu.com
+2025-05-29 15:05:02,736 - ai_dirscan - ERROR - Scan process error: Traceback (most recent call last):
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 73, in <module>
+    main()
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 66, in main
+    from lib.controller.controller import Controller
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/controller/controller.py", line 27, in <module>
+    from lib.connection.requester import Requester
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/connection/requester.py", line 48, in <module>
+    from lib.utils.mimetype import guess_mimetype
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/utils/mimetype.py", line 22, in <module>
+    from defusedxml import ElementTree
+ModuleNotFoundError: No module named 'defusedxml'
+
+2025-05-29 15:05:02,736 - ai_dirscan - ERROR - Scan process failed: Traceback (most recent call last):
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 73, in <module>
+    main()
+  File "/Users/wooluo/DEV/ai_dirscan/./dirsearch/dirsearch.py", line 66, in main
+    from lib.controller.controller import Controller
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/controller/controller.py", line 27, in <module>
+    from lib.connection.requester import Requester
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/connection/requester.py", line 48, in <module>
+    from lib.utils.mimetype import guess_mimetype
+  File "/Users/wooluo/DEV/ai_dirscan/dirsearch/lib/utils/mimetype.py", line 22, in <module>
+    from defusedxml import ElementTree
+ModuleNotFoundError: No module named 'defusedxml'
+: Command '['python', './dirsearch/dirsearch.py', '-u', 'http://www.baidu.com', '-o', 'scan_results/scan_www.baidu.com_20250529_150502.json', '--format=json', '-q', '--no-color']' returned non-zero exit status 1.
