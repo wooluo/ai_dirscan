@@ -1,6 +1,8 @@
 # AI DirScan - 智能目录扫描与漏洞分析工具
 
-🔗 **项目地址**: [https://github.com/Elitewa/ai_dirscan](https://github.com/Elitewa/ai_dirscan)
+**增加sqlmap工具调用**
+
+感谢原项目 🔗 **项目地址**: [https://github.com/Elitewa/ai_dirscan](https://github.com/Elitewa/ai_dirscan)
 
 ## 📖 项目简介
 本项目可以说是MCP+AI和传统安全融合的一个示范，鉴于现在关于MCP for Security的知识还不够完善，也算是抛砖引玉了，如果有更好的建议欢迎指出🤩
@@ -19,6 +21,14 @@ AI DirScan 是基于 **MCP协议** 的新一代智能安全扫描工具，创新
 - 可配合Cline进行扫描全流程自动化，产出相应md格式漏洞报告
 
 🧑🏻‍💻 功能预览
+
+该MCP工具可自动获取对话中的URL地址，并进行SQL注入测试
+
+使用以下提示语进行测试：
+
+```使用mcp工具 将使用SQLmap工具对新的目标URL http://testphp.vulnweb.com/listproducts.php?cat=2 进行SQL注入测试，并输出漏洞poc```
+
+![e389fcd0438e7ac2a15b10ba53ebccee](/Users/wooluo/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/uuzhang_933b/temp/2025-05/RWTemp/e389fcd0438e7ac2a15b10ba53ebccee.png)
 
 该MCP工具可自动获取对话中的URL地址，并进行目录扫描
 
