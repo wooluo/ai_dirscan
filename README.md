@@ -28,7 +28,7 @@ AI DirScan 是基于 **MCP协议** 的新一代智能安全扫描工具，创新
 
 ```使用mcp工具 将使用SQLmap工具对新的目标URL http://testphp.vulnweb.com/listproducts.php?cat=2 进行SQL注入测试，并输出漏洞poc```
 
-![e389fcd0438e7ac2a15b10ba53ebccee](/Users/wooluo/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/uuzhang_933b/temp/2025-05/RWTemp/e389fcd0438e7ac2a15b10ba53ebccee.png)
+<img src="assets/1.png" alt="1" style="zoom:50%;" />
 
 该MCP工具可自动获取对话中的URL地址，并进行目录扫描
 
